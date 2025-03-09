@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+  --mdc-dialog-container-shape: var(--mdc-dialog-container-shape, var(--mat-app-corner-extra-large, 4px))
+
+}
+
+.opacity-wrap {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+  font-family: sans-serif;
+  left: -2px;
+  bottom: -45px;
+  width: 234px;
+  visibility: hidden;
+}

@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <div class="title">
+    Pick Gradiant
+  </div>
+  <div #gp id="gp"></div>
+  @if (showOpacity) {
+    <input type="number" max="1" min="0" [(ngModel)]="currentOpacity" step="0.1" (ngModelChange)="onOpacityChange()">
+  }
+  <div class="actions">
+    <button (click)="cancel()">Cancel</button>
+    <button (click)="apply()">Apply</button>
+  </div>
+</div>
