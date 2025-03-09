@@ -18,7 +18,7 @@ export class Gradient implements GradientInterFace {
     this.autoSize = !!config.autoSize;
   }
 
-  value(): GradientMap[] {
+  value(): GradientStop[] {
     return this.stops.map((stop, index) => {
       return {
         stop,
@@ -36,14 +36,14 @@ export interface GradientInterFace {
   hasAlpha: boolean;
 }
 
-export type GradientMap = {
+export type GradientStop = {
   stop: number;
   opacity: number
   color: string
 }
 
 export type GradientConfig = {
-  color: GradientMap[];
+  color: GradientStop[];
   hasAlpha: boolean;
   width?: number;
   height?: number;

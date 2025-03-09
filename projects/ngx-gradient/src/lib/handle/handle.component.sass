@@ -1,0 +1,29 @@
+.handle-wrap
+  position: absolute
+  top: 0
+  left: 0
+
+  .bar
+    cursor: col-resize
+    height: 50px
+    width: 4px
+    background: #fff
+    box-shadow: 0 0 10px 1px #000
+    border: 0.5px solid #000
+    transition: border, box-shadow, ease 0.15s
+    position: relative
+
+  .color-wrapper
+    cursor: pointer
+    height: 20px
+    width: 20px
+    position: absolute
+    bottom: -21px
+    left: 50%
+    transform: translate(-50%, 0)
+    .color
+      border: 1px solid #000
+      border-radius: 5px
+      overflow: hidden
+      height: 20px
+      width: 20px

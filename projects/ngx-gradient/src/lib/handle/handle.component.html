@@ -1,0 +1,11 @@
+<div class="handle-wrap" cdkDragLockAxis="x" cdkDrag (dragstart)="onDragStart()">
+  <div class="bar" cdkDragHandle>
+  </div>
+  <div class="color-wrapper">
+    <div class="color" (click)="toggleColorPicker()" [style.background]="stop.color">
+    </div>
+  </div>
+  @if (showPicker) {
+    <color-sketch [color]="stop.color" (onChangeComplete)="changeComplete($event)"></color-sketch>
+  }
+</div>
